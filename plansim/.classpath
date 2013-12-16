@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/selenium-java-2.33.0.jar"/>
+	<classpathentry kind="lib" path="lib/mason.16.jar"/>
+	<classpathentry kind="lib" path="lib/j3dcore.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/mike/programs/j3d-1_5_2-linux-amd64/lib/amd64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/j3dutils.jar"/>
+	<classpathentry kind="lib" path="lib/vecmath.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PrologPlusCG"/>
+	<classpathentry kind="lib" path="lib/db4o-8.1.249.16099-all-java5.jar"/>
+	<classpathentry kind="lib" path="lib/aminePlatform.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

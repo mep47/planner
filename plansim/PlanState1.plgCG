@@ -1,0 +1,30 @@
+Universal > Location, Crane, Pile, Container, Robot, Coordinates, Dimensions, Color.
+
+Location = "Loc1", "Loc2".
+Crane = "Crane1", "Crane2".
+Pile = "Pile1", "Pile2".
+Container = "Container11", "Container12", "Container21", "Container22".
+Robot = "Robot1", "Robot2".
+Coordinates = "x200 y200", "x450 y200".
+Dimensions = "h200 w200".
+Color = "rgb 0 255 0", "rgb 255 0 0", "rgb 0 0 255".
+
+[Location: "Loc1"] -
+	-loc->[Coordinates: "x200 y200"],
+	-attr1->[Dimensions: "h200 w200"],
+	-attr2->[Color: "rgb 0 255 0"],
+	-contains1->[Crane: "Crane1"],
+	-contains2->[Pile: "Pile1"] -
+		-contains1->[Container: "Container11"],
+		-contains2->[Container: "Container12"].
+
+[Location: "Loc2"] -
+	-loc->[Coordinates: "x450 y200"],
+	-attr1->[Dimensions: "h200 w200"],
+	-attr2->[Color: "rgb 0 255 0"],
+	-contains1->[Crane: "Crane2"],
+	-contains2->[Pile: "Pile2"] -
+		-contains1->[Container: "Container21"],
+		-contains2->[Container: "Container22"],,
+	-contains3->[Robot: "Robot1"].
+	

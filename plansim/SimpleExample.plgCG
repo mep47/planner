@@ -1,0 +1,10 @@
+
+Universal > Car, Door, Fender.
+
+Car = "Car1".
+Door = "Door1".
+Fender = "Fender1".
+
+[Car: "Car1"] -
+	-part->[Door: "Door1"],
+	-part->[Fender: "Fender1"].

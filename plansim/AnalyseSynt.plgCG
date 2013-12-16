@@ -1,0 +1,23 @@
+sentence(p, ph(_np, _vp)) :-
+    read_sentence(p, L),
+    np(L, L1, _np),
+    vp(L1, (), _vp), /.
+
+np((_det, _adj, _noun|L), L, np(det(_det), 
+   adj(_adj), noun(_noun))) :-
+    det(_art),
+    adj(_adj),
+    noun(_noun), /.
+
+vp((_verb|L), L1, vp(verb(_verb), _np)) :-
+    verb(_verb),
+    np(L, L1, _np), /.
+
+
+det("the").
+det("a").
+adj("beautiful").
+noun("girl").
+noun("apple").
+verb("eat").
+verb("eats").
