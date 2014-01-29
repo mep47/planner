@@ -16,10 +16,10 @@ import aminePlatform.util.AmineList;
 import aminePlatform.util.Variable;
 import aminePlatform.util.cg.CG;
 
-import PrologPlusCG.PPCGIO_CLI;
-import PrologPlusCG.cgspace.SpaceManager;
-import PrologPlusCG.gui.PrologPlusCGFrame;
-import PrologPlusCG.prolog.PPCGEnv;
+//import PrologPlusCG.PPCGIO_CLI;
+//import PrologPlusCG.cgspace.SpaceManager;
+//import PrologPlusCG.gui.PrologPlusCGFrame;
+//import PrologPlusCG.prolog.PPCGEnv;
 
 import controller.sim.PlanController;
 
@@ -40,13 +40,15 @@ public class PlanSim extends SimState {
 	
 	public final static int LOC_MAX_X = 700;
 	public final static int LOC_MAX_Y = 700;
-	
-    private PPCGEnv env = null;
-    private PrologPlusCGFrame prologFrame = null;
+//	
+//    private PPCGEnv env = null;
+//    private PrologPlusCGFrame prologFrame = null;
     
 	
 	String ontologyFilePath = "/home/mike/dev/amineKnowledgeBases/PlanningOntology.xml";
+//	String ontologyFilePath = "/home/mike/dev/amineKnowledgeBases/test1Ontology.xml";
 	String[] ppcgFilePaths = {"/home/mike/dev/amineKnowledgeBases/linearFormGraphs/PlanState2.plgCG"};
+//	String[] ppcgFilePaths = {"/home/mike/dev/amineKnowledgeBases/linearFormGraphs/Test1.plgCG"};
 	
 	Interpreter interpreter;
 	Lexicon mainLexicon;
@@ -58,11 +60,11 @@ public class PlanSim extends SimState {
 		
 		conceptMap = new HashMap<String,Object>();
 		
-        env = new PPCGEnv();
-        PPCGIO_CLI io = new PPCGIO_CLI(env);
-        env.io = io;
-        env.bWriteToDebugTree = true;
-        prologFrame = new PrologPlusCGFrame(env, false);		
+//        env = new PPCGEnv();
+//        PPCGIO_CLI io = new PPCGIO_CLI(env);
+//        env.io = io;
+//        env.bWriteToDebugTree = true;
+//        prologFrame = new PrologPlusCGFrame(env, false);		
     	
     	CG.setFunctionalCG(false);
     	
